@@ -15,6 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/SplashScreenStyle"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ui.SplashScreenActivity"
+            android:theme="@style/SplashScreenStyle"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.DetailsActivity"
             android:theme="@style/DetailsActivityStyle"
@@ -25,11 +35,6 @@
             android:name=".ui.MainActivity"
             android:screenOrientation="portrait"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

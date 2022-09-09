@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        navController = findNavController(R.id.navHostfragment)
+        navController = findNavController(R.id.navHostFragment)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.recipesFragment,
